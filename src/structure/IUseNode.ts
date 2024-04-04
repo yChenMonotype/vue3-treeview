@@ -24,4 +24,5 @@ export default interface IUseNode {
     down: () => void;
     prevVisible: (id: string) => string;
     nextVisible: (id: string) => string;
+    contextmenu: () => void;
 }

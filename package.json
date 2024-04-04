@@ -1,5 +1,5 @@
 {
-  "name": "vue3-treeview",
+  "name": "@monotype/vue3-treeview",
   "version": "0.4.2",
   "private": false,
   "library": "vue3-treeview",

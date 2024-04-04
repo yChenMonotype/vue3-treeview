@@ -5,6 +5,7 @@ export const nodeEvents = {
     toggle: "nodeToggle",
     blur: "nodeBlur",
     edit: "nodeEdit",
+    contextmenu: "nodeContextmenu",
 };
 
 export const checkboxEvents = {

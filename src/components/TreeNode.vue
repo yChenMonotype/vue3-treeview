@@ -21,6 +21,7 @@
       :tabindex="tabIndex"
       @blur="blur"
       @click.stop="focus"
+      @contextmenu.prevent.stop="contextmenu"
       @dragstart.stop="dragstart"
       @dragend.stop="dragend"
       @dragenter.prevent.stop="dragenter"

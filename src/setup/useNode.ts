@@ -135,6 +135,10 @@ export function useNode(cmn: IUseCommon, props: INodeProps): IUseNode {
         });
     });
 
+    const contextmenu = ((e: MouseEvent) => {
+        cmn.root.emit(nodeEvents.contextmenu, node.value, e);
+    });
+
     const toggle = (() => {
         node.value.state.opened = !node.value.state.opened;
         cmn.root.emit(nodeEvents.toggle, node.value);
@@ -274,6 +278,7 @@ export function useNode(cmn: IUseCommon, props: INodeProps): IUseNode {
         toggle,
         focus,
         prevVisible,
-        nextVisible
+        nextVisible,
+        contextmenu
     };
 }
